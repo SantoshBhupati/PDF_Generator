@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <div class="logo"><a href="#">EformsCreator</a></div>
+            <div class="menu" id="navmenubar">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <ul class="listItems" id="navmenu">
+                <div class="closebtn" id="closebtn">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <li class="navItems dropdown"><a class="navLinks dropdownLink" href="#">Business <i class="fa fa-caret-down dropdownIcon" aria-hidden="true"></i></a>
+                   
+                    <div class="megamenu">
+                       <ul class="content">
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Business Sheet Online</a></li>
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Employment Contract Online</a></li>
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Letter of Termination Online</a></li>
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Promissory Note Online</a></li>
+                       </ul>
+                       <ul class="content">
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Business Plan Online</a></li>
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Employee Handbook</a></li>
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Non-Disclosure Agreement Online</a></li>
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Release of Liability Online</a></li>
+                       </ul>
+                       <ul class="content">
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Cease and Desist All Copyright infringement Online</a></li>
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Invoice Online</a></li>
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Non-Compete Agreement Online</a></li>
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Warranty Deed Online</a></li>
+                       </ul>
+                       <ul class="content">
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Consulting Agreement Online</a></li>
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Job Application Form Online</a></li>
+                        <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Purchase Order Online</a></li>
+                    
+                       </ul>
+                   </div>
+                     
+                
+                </li>
+                <li class="navItems dropdown"><a class="navLinks dropdownLink" href="#">Family & Personal <i class="fa fa-caret-down dropdownIcon" aria-hidden="true"></i></a>
+                    <div class="megamenu">
+                        <ul class="content">
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Affidavit Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Boat Bill of Sale Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Letter Of Recommendation Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Personal Financial Statement Online</a></li>
+                        </ul>
+                        <ul class="content">
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Affidavit of Death Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>General Bill Of Sale Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Last Will and Testament Agreement Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Power of Attorney Online</a></li>
+                        </ul>
+                        <ul class="content">
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Affidavit of Heirship Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Guardianship Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Living Will Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Resignation Letter Online</a></li>
+                        </ul>
+                        <ul class="content">
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Birth certificate Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Letter of Agreement Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Medical Consent Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Vehicle bill Of Sale Online</a></li>
+                        </ul>
+                    </div></li>
+                <li class="navItems dropdown"><a class="navLinks dropdownLink" href="#">Deeds & Property <i class="fa fa-caret-down dropdownIcon" aria-hidden="true"></i></a>
+                    <div class="megamenu">
+                        <ul class="content">
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Affidavit of Small Estate Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Eviction Notice Online </a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Rental Application Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Triple Net Lease Agreement Online</a></li>
+                        </ul>
+                        <ul class="content">
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Article of Incorporation Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Lease Agreement Online k</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Residential Lease Agreement Online </a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Warranty Deed Online</a></li>
+                        </ul>
+                        <ul class="content">
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Commerical Lease Agreement </a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Month to Month Lease Agreement Online </a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Real Estate Purchase Online</a></li>
+               
+                        </ul>
+                        <ul class="content">
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Contract For Deed Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Quit Claim Deed Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Sublease Agreement Online</a></li>
+               
+                        </ul>
+                    </div></li></li>
+                <li class="navItems dropdown"><a class="navLinks dropdownLink" href="#">Tax Forms <i class="fa fa-caret-down dropdownIcon" aria-hidden="true"></i></a>
+                    <div class="megamenu">
+                        <ul class="content taxForms">
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>1099-MISC Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>W3 Online</a></li>
+                        </ul>
+                        <ul class="content taxForms">
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>1099-NEC Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>W4 Online</a></li>
+                        </ul>
+                        <ul class="content taxForms">
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>2553 Form Online</a></li>
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>W9 Online</a></li>  
+                        </ul>
+                        <ul class="content taxForms">
+                         <li class="megamenuItem"><a href="#" class="megalink"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>W2 Online</a></li>
+                        </ul>
+                    </div></li></li>
+                <li class="navItems"><a class="navLinks" href="#">Pay Stub Generator</a></li>
+                <li class="navItems"><a class="navLinks" href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <div class="container">
+        <div class="form_side">
+            <form action="" class="step current" id="step1" >
+                <div class="email_section">
+                    <div class="input_field">
+                        <label>Email</label>
+                        <input type="email"  required id="email">
+                    </div>
+                </div>
+                <p class="statement">What is the name of the state and country in which the affidavit will be filed?</p>
+              <hr class="line_break">              
+              <div class="input_field">
+                <label>State Name</label>
+                <input type="text" id="State_Name">
+            </div>
+            <div class="input_field">
+                <label>County Name
+                </label>
+                <input type="text" id="County_Name">
+            </div>
+            <p class="statement">Can you please provide the Affiant's name, title, and address?
+                </p>
+                <hr class="line_break">   
+                <div class="input_field">
+                    <label>Affiant Personal Title:
+                    </label>
+                    <input type="text" id="Affiant_Personal_Title">
+                </div>
+                <div class="input_field">
+                    <label>Affiant Name:
+                    </label>
+                    <input type="text" id="Affiant_Name">
+                </div>
+                <div class="input_field">
+                    <label>Affiant Address</label>
+                    <input type="text" id="Affiant_Address">
+                </div>
+                <div class="three_box ">
+                    <div class="input_field min_width">
+                        <label>Affiant City:</label>
+                        <input type="text" id="Affiant_City">
+                    </div>
+                    <div class="input_field min_width Margin_left">
+                        <label>Affiant State:</label>
+                        <input type="text" id="Affiant_State">
+                    </div>
+                    <div class="input_field min_width Margin_left">
+                        <label>Affiant Zip Code:</label>
+                        <input type="text" id="Affiant_Zip_Code">
+                    </div>
+                </div>
+                <!-- <button id="Submit">Submit</button> -->
+            </form>
+            <form action="" class="step" id="step2">
+               <br><br>
+                <p class="statement"> Decedent, please provide the following information.</p>
+              <hr class="line_break">              
+              <div class="input_field">
+                <label>Decedent Personal Title:</label>
+                <input type="text" id="Decedent_Personal_Title">
+            </div>
+            <div class="input_field">
+                <label>Decedent Full Legal Name:
+                </label>
+                <input type="text" id="Decedent_Full_Legal_Name">
+            </div>
+            <div class="input_field">
+                <label>Decedent Place of Death:
+                </label>
+                <input type="text" id="Decedent_Place_of_Death">
+            </div> 
+                <div class="input_field">
+                    <label>Decedent Date of Death:
+                    </label>
+                    <input type="text" id="Decedent_Date_of_Death">
+                </div>
+                <div class="input_field">
+                    <label>Decedent Address:</label>
+                    <input type="text" id="Decedent_Address">
+                </div>
+                <div class="three_box ">
+                    <div class="input_field min_width">
+                        <label>Decedent City:</label>
+                        <input type="text" id="Decedent_City">
+                    </div>
+                    <div class="input_field min_width Margin_left">
+                        <label>Decedent State:</label>
+                        <input type="text" id="Decedent_State">
+                    </div>
+                    <div class="input_field min_width Margin_left">
+                        <label>Decedent Zip Code:</label>
+                        <input type="text" id="Decedent_Zip_Code">
+                    </div>
+                </div>
+                <!-- <button id="Submit">Submit</button> -->
+            </form>
+            <!-- ____________________________________________________________________________________________________ -->
+            <form action="" class="step" id="step3">
+                <p class="statement">Can you tell me the District Number or Court Name that has jurisdiction over this case?</p>
+              <hr class="line_break">              
+              <div class="input_field">
+                <label>District or Court Name:</label>
+                <input type="text" id="District_or_Court_Name">
+            </div>
+            <p class="statement">What is your state's requirement regarding the number of days since the decedent died before an affidavit can be filed?</p>
+                <hr class="line_break">   
+                <div class="input_field">
+                    <label>Required Waiting Period Days:
+                    </label>
+                    <input type="text" id="Required_Waiting_Period_Days">
+                </div>
+                <p class="statement">What is the relationship between the Affiant and the Decedent?</p>
+                <hr class="line_break">
+                <div class="input_field">
+                    <label>Relationship Details:</label>
+                    <!-- <input type="text" id="Relationship_Details" height="20px"> -->
+                    <textarea name="" id="Relationship_Details" cols="20" rows="5"></textarea>
+                </div>
+                <p class="statement">How much is the total estimated value of the Decedent's estate?</p>
+                <hr class="line_break">
+                <div class="input_field">
+                    <label>Estate Value:
+                    </label>
+                    <input type="text" id="Estate_Value" oninput="updateInputField('Estate_Value')">
+                </div>
+                <!-- <button id="Submit">Submit</button> -->
+            </form>
+            <form action="" class="step" id="step4">
+                <p class="statement">Please include all of the assets in the estate of the deceased. Would you wish to add the first property of the Decedent?</p>
+              <hr class="line_break">              
+              <div class="radio_button">
+                <label>Add first property?:</label>
+             <br>
+                <input type="radio" name="property" onclick="showFields(1)"><span class="margin_left">Yes<span><br>
+                <input type="radio" name="property" onclick="hideFields(1)"><span class="margin_left">No</span>
+
+            </div>
+            <br>
+            <div id="Additional_set_1" style="display: none;">
+            <div class="input_field">
+                <label>What is the Decedent's first property or item?:
+                </label>
+                <input type="text" id="Decendat_first_property">
+            </div>
+            <div class="input_field">
+                <label>What is the the value of the property or item?:
+                </label>
+                <input type="text" id="Decedent_first_property_value" oninput="updateInputField('Decedent_first_property_value')" >
+            </div>
+            <div class="input_field">
+                <label>Where is the property located?:
+                </label>
+                <input type="text" id="Decedent_first_property_location">
+                <p class="statement">Export Your Affidavit Of Small Estate Would you like to add a second property or item of the Decedent?</p>
+                <hr class="line_break">  
+                <div class="radio_button">
+                    <label>Claim Second Property or Item of the Decedent?:</label>
+                 <br>
+                    <input type="radio" name="property" onclick="showFields(2)"><span class="margin_left">Yes<span><br>
+                    <input type="radio" name="property" onclick="hideFields(2)"><span class="margin_left" >No</span>
+                </div>
+            </div>
+        </div>
+        <div id="Additional_set_2" style="display: none;">
+            <div class="input_field">
+                <label>What is the Decedent's second property or item?:
+                </label>
+                <input type="text" id="Decendat_second_property">
+            </div>
+            <div class="input_field">
+                <label>What is the the value of the property or item?:
+                </label>
+                <input type="text" id="Decedent_second_property_value" oninput="updateInputField('Decedent_second_property_value')">
+            </div>
+            <div class="input_field">
+                <label>Where is the property located?:
+                </label>
+                <input type="text" id="Decedent_second_property_location">
+                <p class="statement">Would you like to add a third property or item of the Decedent?</p>
+                <hr class="line_break">  
+                <div class="radio_button">
+                    <label>Claim Third Property or Item:</label>
+                 <br>
+                    <input type="radio" name="property" onclick="showFields(3)"><span class="margin_left">Yes<span><br>
+                    <input type="radio" name="property" onclick="hideFields(3)"><span class="margin_left">No</span>
+    
+                </div>
+            </div>
+        </div>
+        <div id="Additional_set_3" style="display: none;">
+            <div class="input_field">
+                <label>What is the Decedent's third property or item?:
+                </label>
+                <input type="text" id="Decendat_third_property">
+            </div>
+            <div class="input_field">
+                <label>Third Value:
+                </label>
+                <input type="text" id="Decedent_third_property_value" oninput="updateInputField('Decedent_third_property_value')">
+            </div>
+            <div class="input_field">
+                <label>Third Location:
+                </label>
+                <input type="text" id="Decedent_third_property_location">
+                <p class="statement">Would you like to add a fourth property or item of the Decedent?</p>
+                <hr class="line_break">  
+                <div class="radio_button">
+                    <label>Claim Fourth Property or Item:</label>
+                 <br>
+                    <input type="radio" name="property" onclick="showFields(4)"><span class="margin_left">Yes<span><br>
+                    <input type="radio" name="property" onclick="hideFields(4)"><span class="margin_left">No</span>
+    
+                </div>
+            </div>
+        </div>
+        <div id="Additional_set_4" style="display: none;">
+            <div class="input_field">
+                <label>Fourth Property or Item:
+                </label>
+                <input type="text" id="Decendat_fourth_property">
+            </div>
+            <div class="input_field">
+                <label>Fourth Value:
+                </label>
+                <input type="text" id="Decedent_fourth_property_value" oninput="updateInputField('Decedent_fourth_property_value')">
+            </div>
+            <div class="input_field">
+                <label>Fourth Location:
+                </label>
+                <input type="text" id="Decedent_fourth_property_location">
+            </div>
+        </div>
+            </form>
+
+            <form action="" class="step" id="step5">
+                <p class="statement">Are there any unpaid liabilities owed by the Decedent?</p>
+              <hr class="line_break">              
+              <div class="radio_button">
+                <label>Unpaid Liabilities:</label>
+               <br>
+                <input type="radio" name="property" onclick="showfieldslib(1)"><span class="margin_left">Yes<span><br>
+                <input type="radio" name="property" onclick="hidefieldslib(1)"><span class="margin_left">No</span>
+
+            </div>
+            <br>
+            <div id="Additional_set_lib_1"  style="display: none;">
+                <p class="statement">What is the Decedent's first liability and the amount owed?</p>
+                    <hr class="line_break">  
+                <div class="input_field">
+                    <label>What is the Decedent's liability?:
+                    </label>
+                    <input type="text" id="First_Decedent_liability">
+                </div>
+                <div class="input_field">
+                    <label>What is the amount owed?:
+                    </label>
+                    <input type="text" id="First_amount_owed" oninput="updateInputField('First_amount_owed')">
+                </div>
+                <p class="statement">Does the Decedent have a second unpaid liability?</p>
+                    <hr class="line_break">  
+                    <div class="radio_button">
+                        <label>Add second liability?:</label>
+                     <br>
+                        <input type="radio" name="property" onclick="showfieldslib(2)"><span class="margin_left">Yes<span><br>
+                        <input type="radio" name="property" onclick="hidefieldslib(2)"><span class="margin_left">No</span>
+        
+                    </div>
+            </div>
+            <div id="Additional_set_lib_2" style="display: none;">
+                <div class="input_field">
+                    <label>What is the Decedent's liability?:
+                    </label>
+                    <input type="text" id="Second_Decedent_liability">
+                </div>
+                <div class="input_field">
+                    <label>What is the amount owed?:
+                    </label>
+                    <input type="text" id="Second_amount_owed" oninput="updateInputField('Second_amount_owed')">
+                </div>
+                <p class="statement">Does the Decedent have a third unpaid liability?</p>
+                    <hr class="line_break">  
+                    <div class="radio_button">
+                        <label>Add third liability?:</label>
+                     <br>
+                        <input type="radio" name="property" onclick="showfieldslib(3)"><span class="margin_left">Yes<span><br>
+                        <input type="radio" name="property" onclick="hidefieldslib(3)"><span class="margin_left">No</span>
+        
+                    </div>
+            </div>
+            <div id="Additional_set_lib_3" style="display: none;">
+                <div class="input_field">
+                    <label>What is the Decedent's liability?:
+                    </label>
+                    <input type="text" id="Third_Decedent_liability">
+                </div>
+                <div class="input_field">
+                    <label>What is the amount owed?:
+                    </label>
+                    <input type="text" id="Third_amount_owed" oninput="updateInputField('Third_amount_owed')">
+                </div>
+                <p class="statement">Does the Decedent have a fourth unpaid liability?</p>
+                    <hr class="line_break">  
+                    <div class="radio_button">
+                        <label>Add fourth liability?:</label>
+                     <br>
+                        <input type="radio" name="property" onclick="showfieldslib(4)"><span class="margin_left">Yes<span><br>
+                        <input type="radio" name="property" onclick="hidefieldslib(4)"><span class="margin_left">No</span>
+        
+                    </div>
+            </div>
+            <div id="Additional_set_lib_4" style="display: none;">
+                <div class="input_field">
+                    <label>What is the Decedent's liability?:
+                    </label>
+                    <input type="text" id="Fourth_Decedent_liability">
+                </div>
+                <div class="input_field">
+                    <label>What is the amount owed?:
+                    </label>
+                    <input type="text" id="Fourth_amount_owed" oninput="updateInputField('Fourth_amount_owed')">
+                </div>
+                
+            </div>
+                <!-- <button id="Submit">Submit</button> -->
+            </form>
+            <form action="" class="step" id="step5">
+                <p class="statement">Do you want to fill out the personal information for the two needed witnesses now or later?</p>
+              <hr class="line_break">              
+            <div class="select_input">
+                <label>Add now or later?:</label>
+                <br>
+                <select onchange="toggleFields(this.value)">
+                    <option value=""></option>
+                    <option value="Add now" >Add now</option>
+                    <option value="Add later">Add later</option>
+                </select>
+            </div>
+                <!-- <button id="Submit">Submit</button> -->
+                <div id="add_now_field"  style="display: none;">
+                    <p class="statement">Who will serve as the first witness?</p>
+                    <hr class="line_break">
+                    <div class="input_field">
+                        <label>First Witness Name:
+                        </label>
+                        <input type="text" id="First_Witness_Name">
+                    </div>
+                    <div class="input_field">
+                        <label>First Witness Address:</label>
+                        <input type="text" id="First_Witness_Address">
+                    </div>
+                    <div class="three_box ">
+                        <div class="input_field min_width">
+                            <label>First Witness City:</label>
+                            <input type="text" id="First_Witness_City">
+                        </div>
+                        <div class="input_field min_width Margin_left">
+                            <label>First Witness State</label>
+                            <input type="text" id="First_Witness_State">
+                        </div>
+                        <div class="input_field min_width Margin_left">
+                            <label> Zip Code:</label>
+                            <input type="text" id="First_Witness_Zip_Code">
+                        </div>
+                    </div>
+                    <div class="input_field">
+                        <label>First Witness Telephone Number:</label>
+                        <input type="text" id="First_Witness_Telephone_Number">
+                    </div>
+                    <p class="statement">Who is going to be the second witness?</p>
+                    <hr class="line_break">
+                    <div class="input_field">
+                        <label>Second Witness Name:
+                        </label>
+                        <input type="text" id="Second_Witness_Name">
+                    </div>
+                    <div class="input_field">
+                        <label>Second Witness Address:</label>
+                        <input type="text" id="Second_Witness_Address">
+                    </div>
+                    <div class="three_box">
+                        <div class="input_field min_width">
+                            <label class="small_size">Second Witness City:</label>
+                            <input type="text" id="Second_Witness_City">
+                        </div>
+                        <div class="input_field min_width Margin_left">
+                            <label>Second Witness State</label>
+                            <input type="text" id="Second_Witness_State">
+                        </div>
+                        <div class="input_field min_width Margin_left">
+                            <label> Zip Code:</label>
+                            <input type="text" id="Second_Witness_Zip_Code">
+                        </div>
+                    </div>
+                    <div class="input_field">
+                        <label>Second Witness Telephone Number:</label>
+                        <input type="text" id="Second_Witness_Telephone_Number">
+                    </div> 
+                </div>
+            </form>
+        </div>
+        <!-- -------------------------------------------------- -->
+   
+        
+        <div class="pdf_side" id="pdf">
+           <div class="pdf">
+        <div class="nav_bar">
+        <div class="box">
+         <p class="box_1">1</p>
+         <p>3</p>  
+        </div>
+            <div class="box_middle">
+                <p class="dark_weight plus_sign">+</p>
+                <span>|</span>
+                <p class="dark_weight negative_sign">-</p>
+                <p class="select_option">
+                    <select id="mySelect" onchange="pageSize();">
+                    <option value="1">Actual Size</option>
+                    <option value="2">Page Fit</option>
+                    <option value="3">Page Width</option>
+                    <option value="4">50%</option>
+                    <option value="5">75%</option>
+                    <option value="6">100%</option>
+                    <option value="7">125%</option>
+                    <option value="8">150%</option>
+                    <option value="9">200%</option>
+                    <option value="10">300%</option>
+                    <option value="11">400%</option>
+                </select>
+                </p>
+            </div>
+            <div class="refresh">
+                <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+        </div>
+        <div class="overflow_box" id="overflow_box">
+        <div class="internal_div" id="internal_div">
+        <div class="internal_box" id="div1">
+            <div class="text_data">
+                <p class="head_text">Affidavit of Small Estate Online</p>
+                <br><br>
+                <p class="semi_bold state_of">STATE OF ________________</p>
+                <p class="semi_bold country_of">COUNTRY OF ______________</p>
+                <p class="paragraph">By signing this affidavit,I<span class="affiant_personal_title">__</span><span class="affiant_name">________</span>,residing at<span class="affiant_address">___________</span>,<span class="affiant_city">______</span>,<span class="affiant_state">______</span>,<span class="affiant_zip_code">_____</span> or affirm under penalty of perjury that  the following statements and the contents are true and correct</p>
+                <p class="bold_titles">
+                    Decedent Information
+                </p>
+                <hr class="line_down"><br>
+                <p class="semi_bold Small_size">Decedent Name  <span class="decedent_personal_title">__</span><span class="decedent_full_legal_name">_____</span></p>
+                <p class="semi_bold Small_size">Date Of Death <span class="decedent_date_of_death">________________</span></p>
+                <p class="semi_bold Small_size">Place Of Death <span class="decedent_place_of_death">________</span></p>
+                <p class="paragraph">Herein is an actual copy of Decedent's death certificate.</p>
+                <!-- <p class="paragraph">The Decendat resided at time of death certificate.
+                    <span class="decedent_address">________________</span>,________________,________________,________________
+                    The ___________ shall have jurisdiction over this matter since the Decendat stayed within
+                    this jurisdiction prior death.
+                </p> -->
+              <p class="paragraph">
+ The Decendat resided at time of death certificate.
+ <span class="decedent_address">______________</span>,<span class="decedent_city">_______________</span>,<span class="decedent_state">________________</span>,<span class="decedent_zip_code">___________________</span>
+ The <span class="district_or_court_name">_____________</span> shall have jurisdiction over this matter since the Decendat stayed 
+ within this jurisdiction prior death.
+              </p>
+                <p class="bold_titles">
+                    Period Of Waiting File
+                </p>
+                <hr class="line_down"><br>
+                <p class="paragraph">Since the Decendat's death more than <span class="required_waiting_period_days">_____________</span> days had passed</p>
+                <p class="bold_titles">
+                    Relationship
+                </p>
+                <hr class="line_down"><br>
+                <p class="paragraph">The Following is my relationship to the Decedent: <span class="relationship_details">_____________</span></p>
+                <p class="bold_titles">
+                    Estate Value Estimated
+                </p>
+                <hr class="line_down"><br>
+                <p class="paragraph">
+                    The entire setimated value of all of the Decendat value of the decedent's personal property in Decendat's estate minus any lines or outstatnding debets on the property is not more than <span class="estate_value">___________</span></p>
+                    <p class="bold_titles">
+                        ENTITLEMENT
+                    </p>
+                    <hr class="line_down"><br>
+                    <p class="paragraph">
+                        I <span class="affiant_name_1">___________</span>  am claiming succession to Decedent's estate and that ,as the Decedent's 
+                        Personal representative.
+                    </p>
+                    <p class="paragraph">
+                        A Copy of the Decendat,s Last Will and Testament shall be attached if the Decedent left one .If no Last Will and Testament are attached to this document ,the Decedent died intestate
+                    </p>
+            </div>    
+        </div>
+        <br>
+        <div class="internal_box" id="div2">
+            <div class="text_data">
+            <p class="paragraph">
+                Those with equal or greater rights to the property than I did assign their full interests in the estate to me,as evidenced by copy of the documents to that effect now attached to this Affidavit
+            </p>
+            <p class="bold_titles">
+                PROPERTY DESCRIPTION
+            </p>
+            <hr class="line_down"><br>
+            <p class="paragraph">
+            The Following real estate and/or personal items belonged to the Decedent:
+            </p>
+            <p class="bold_titles">
+              VALUE OF PROPERTY DESCRIPTION
+            </p>
+            <hr class="line_down"><br>
+            <div class="value_description">
+                <table class="table_style">
+                    <tr>
+                        <td><span class="underline">Property Description</span></td>
+                        <td><span class="underline">value</span></td>
+                        <td><span class="underline">Property Location</span></td></td>
+                    </tr>
+                </table>
+            </div>
+            <pre class="semi_bold">ESTATE TOTAL VALUE     $0.00</pre>
+
+            
+            <p class="bold_titles">
+                DECEDENT'S LIABILITIES:
+              </p>
+              <hr class="line_down"><br>
+              <P class="paragraph">The Decedent passed owing the following liabilities which shall be paid in full from any proceeds received from the Decendent's estate</P>
+              <div class="Decendts_liablities">
+                <table class="table_style">
+                    <tr>
+                        <td><span class="underline">LIABILITY DESCRIPTION</span></td>
+                        <td><span class="underline">AMOUNT OWED</span></td>
+                    </tr>
+                </table>
+                
+            </div>
+            <pre class="semi_bold">LIABILITY TOTAL OWED                                     $0.00</pre>
+            <p class="paragraph">This affidavit is being submitted in order to file a claim against the <span class="decedent_personal_title_1">___</span><span class="decedent_full_legal_name_1">_____________</span> 
+Decedent's estate
+                            </p>
+            <p class="bold_titles">
+              AFFIRMATION OR OATH:
+              </p>
+              <hr class="line_down"><br>
+              <p class="paragraph">
+                I <span class="affiant_name_2">___________</span>  Certify that information included herein is accurate and correct to the best of my knowledge under penality of perjury .Each individual with sucessor rights to the Decedent's property that are equal to or superior to mine has received necessary written notice delviered by personal service and/or certified mail,explaining my claim and thus explaining the property being claimed and at least ten(10) days have passed since said notice was served and/or mailed
+                </p>
+                <pre class="paragraph">____________                                                              ______________</pre>
+                <pre class="paragraph">Affiant Signature                                                                  Date signed</pre>
+                <p class="paragraph">________________</p>
+                <p class="paragraph">Affiant Name</p>
+                <p class="paragraph">____________________________________________________________________</p>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div class="internal_box" id="div3">
+            <div class="text_data">
+                <div style="display: none;" id="Witness">
+                    <p class="head_text specific_header"><span >Witness</span></p>
+                    <p class="paragraph">SUBSCRIBED AND SWORN TO BEFORE ME by:</p>
+                    <p class="paragraph">____________________________________________________________________</p>
+    
+                    <table class="two_cl_table">
+                        <tr>
+                          <td>___________________</td>
+                          <td>___________________</td>
+                        </tr>
+                        <tr>
+                          <td>Witness # 1 Signature</td>
+                          <td>Witness # 2 Signature</td>
+                        </tr>
+                        <tr>
+                          <td class="First_Witness_Name">Name - ______________</td>
+                          <td class="Second_Witness_Name">Name - ______________</td>
+                        </tr>
+                        <tr>
+                            <td class="First_Witness_Address">Address - ______________</td>
+                            <td class="Second_Witness_Address">Address - ______________</td>
+                          </tr>
+                          <tr>
+                            <td class="First_Witness_City">City - ______________</td>
+                            <td class="Second_Witness_City">City - ______________</td>
+                          </tr>
+                          <tr>
+                            <td class="First_Witness_State">State - ______________</td>
+                            <td class="Second_Witness_State">State - ______________</td>
+                          </tr>
+                          <tr>
+                            <td class="First_Witness_Zip_Code">Zip Code - ______________</td>
+                            <td class="Second_Witness_Zip_Code">Zip Code - ______________</td>
+                          </tr>
+                          <tr>
+                            <td class="First_Witness_Telephone_Number">Phone no. - ______________</td>
+                            <td class="Second_Witness_Telephone_Number">Pnone no. - ______________</td>
+                          </tr>
+                      </table>
+                      <br>
+                    </div>
+                <p class="semi_bold state_of_1">STATE OF ________________</p>
+                <p class="semi_bold country_of_1">COUNTRY OF ______________</p>
+                <p class="paragraph"> Sworm to and Affirmed before me on this date of ____________</p>
+                <pre class="paragraph">____________                                                              ______________</pre>
+                <pre class="paragraph">(Signature of Notary Public)                                             (Date signed)</pre>
+                <br>
+                <p class="paragraph">My commission expires : ____________</p>
+                <p class="paragraph">____________________________________________________________________</p>
+                <pre class="paragraph">                         No.____________________</pre>
+                <br>
+                <table class="table_style_1">
+                    <tr>
+                        <td>Estate of</td>
+                        <td>)(</td>
+                        <td>In the probate court no.</td></td>
+                    </tr>
+                    <tr>
+                        <td class="decedent_full_legal_name_2">________</td>
+                        <td>)(</td>
+                        <td>________ Country</td>
+                    </tr>
+                    <tr>
+                        <td>Deceased</td>
+                        <td>)(</td>
+                        <td>___________</td> 
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>___________</td> 
+                    </tr>
+            </table>
+            <p class="head_text specific_header"><span class="underline">ORDER AND APPROVAL FOR SMALL ESTATE AFFIDAVIT JUDGMENT</span></p>
+            <p class="paragraph">The foregoing affidavit of the dad Estate of <span class="relationship_details_1">____________</span>Estate of <span class="decedent_full_legal_name_3">_____</span> the Deceased has been examined and approved by the Court on ____________,20,_______ and is determined to comply with applicable state statute.</p>
+            <p class="head_text specific_header"><span class="underline">TIPS FOR DOCUMENTATION</span></p>
+
+            <ul class="ulclass">
+                <li>
+                    Please note that you must also complete the following in order to file this document
+                </li>
+                <li>This Affidavit must be notarized ,so keep that in mind</li>
+                <li>Prior to filling this document ,you must provide notices to the Decedent's heirs ,sucessors ,and assigns,informing them of your intentions</li>
+                <li>Please confirm that no other Personal Representative claim or decree for Decedent's estate has been filed</li>
+                <li>Please confirm that the entire value of the estate you are claiming on this Affidavit does not exceed the maximum  total amount of estate allowed by state law</li>
+                <li>Please make sure that this Affidavit is not field before the state-mandated waiting period after the Decedent's death</li>
+                <li>Prior to disbursing any proceeds from the Decedent's liabilities must be paid</li>
+            </ul>
+          
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+        </div>
+        
+    </div>
+    <hr class="break_line">  
+    <div class="button_class">
+    <button class="button mobile_next_view">Next</button>  
+    <button class="button active active_m">Prev</button>
+    </div>
+    <button class="button  margin_left_button margin_left_button_m">Save And Continue later</button>
+   <script src="./script.js"></script>
+</body>
+</html>
